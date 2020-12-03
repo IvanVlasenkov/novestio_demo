@@ -1,0 +1,79 @@
+body {
+    min-height: 100vh;
+    height: auto;
+}
+
+#app {
+    min-height: 100vh;
+    height: auto;
+}
+
+h1 {
+    font-size: 1em !important;
+    margin-bottom: 0;
+}
+
+.main-header {
+    height: 3em;
+}
+
+#page {
+    min-height: 92.5vh;
+    height: auto;
+}
+
+#main-aside {
+    background-color: $themes-major;
+    max-width: 13rem;
+}
+
+#main-aside a {
+    color: #ddd0af;
+    text-decoration: none;
+}
+
+.aside-main {
+    color: #ddd0af;
+    font-size: .85em;
+}
+
+.aside-slave:hover,
+.aside-slave:focus {
+    background-color: #272838 !important;
+}
+
+.aside-slave:hover>a,
+.aside-slave:focus>a {
+    color: #fff;
+}
+
+.aside-icon {
+    fill: #ddd0af;
+    height: 1em;
+    width: 1em;
+    display: block;
+    position: absolute;
+    left: .25em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.aside-slave a {
+    position: relative;
+}
+
+.aside-label {
+    margin-left: 2em;
+}
+
+.btn-primary {
+    background-color: $themes-minor;
+    border-color: $themes-minor;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+{
+    background-color: $themes-major;
+    border-color: $themes-major;
+}
