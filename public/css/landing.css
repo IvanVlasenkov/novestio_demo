@@ -150,6 +150,11 @@ img {
     left: -3px;
 }
 
+.locale-icon {
+    width: 40px !important;
+    height: 27px !important;
+}
+
 #main {
     display: flex;
     position: relative;
@@ -171,7 +176,7 @@ img {
     list-style-type: none;
     background: rgba(0, 0, 0, .25);
     border-radius: 4px;
-    padding: .5em .75em;
+    padding: .5em .5em 0.25em 1.25em;
 }
 
 #main .landing-locale a {
@@ -204,6 +209,9 @@ img {
     border-right: 0.3em solid transparent;
     border-bottom: 0;
     border-left: 0.3em solid transparent;
+    position: absolute;
+    top: 15px;
+    left: 5px;
 }
 
 #main-slide-1 {

@@ -13,6 +13,7 @@
     </head>
 
     <body>
+        @includeIf('chunks.main_svg')
         <!-- cadr-1 -->
         <section id="main" class="shadow">
 

@@ -10918,6 +10918,11 @@ h1 {
   margin-bottom: 0;
 }
 
+.locale-icon {
+  width: 40px !important;
+  height: 27px !important;
+}
+
 .main-header {
   height: 3em;
 }
