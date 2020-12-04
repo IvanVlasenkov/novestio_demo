@@ -2,6 +2,8 @@
     --white: #ffffff;
     --black: #000000;
     --yellow: #ffc501;
+    --grey: #e9eef1;
+    --c-blue: #00577d;
 }
 
 @font-face {
@@ -78,8 +80,46 @@ img {
     width: 100%;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.text-18 {
+    font-size: 18px;
+}
+
+.row {
+    display: block;
+    width: 100%;
+}
+
+.c-blue {
+    color: var(--c-blue);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .white {
     color: var(--white);
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mb-51 {
+    margin-bottom: 51px;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .btn-style-1 {
@@ -88,6 +128,7 @@ img {
     text-transform: uppercase;
     font-size: 1.5em;
     max-width: 450px;
+    width: 100%;
     padding: .5em;
     margin: 1em 0;
     display: block;
@@ -119,6 +160,50 @@ img {
     background-size: auto;
     background-size: cover;
     justify-content: flex-start;
+}
+
+#main .landing-locale {
+    display: block;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    margin: auto;
+    list-style-type: none;
+    background: rgba(0, 0, 0, .25);
+    border-radius: 4px;
+    padding: .5em .75em;
+}
+
+#main .landing-locale a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.landing-locale li {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
+    text-transform: uppercase;
+    width: 37px;
+}
+
+.landing-locale .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.dropdown-toggle:after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
 }
 
 #main-slide-1 {
@@ -156,13 +241,58 @@ h1 .bigger {
     line-height: 1.25em;
 }
 
-h1 .smaller {}
-
 #main-slide-1 .text {
     font-size: 1.5em;
     line-height: 1em;
     font-weight: lighter;
     margin-top: 1em;
+}
+
+#cadr-7 {
+    display: flex;
+}
+
+#cadr-7 .content {
+    margin: 124px auto 224px;
+    padding: 0;
+}
+
+#cadr-7 h2 {
+    margin: 0 auto 112px;
+}
+
+#cadr-11 {
+    display: block;
+    position: relative;
+}
+
+#cadr-11 .landing-title {
+    margin: 0 auto 88px;
+}
+
+#cadr-11 .content {
+    margin: 125px auto 100px;
+    width: 100%;
+    max-width: 563px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-callback-input {
+    background-color: var(--grey);
+    max-width: 563px;
+    width: 100%;
+    height: 57px;
+    padding: 28px;
+    border-radius: 11px;
+    margin-bottom: 14px;
+}
+
+.landing-callback-check {
+    align-self: flex-end;
 }
 
 @media(max-width:991px) {
@@ -174,28 +304,42 @@ h1 .smaller {}
 @media(min-width:768px) {
     #main {
         background-image: url('/img/cadr-1.webp');
-		background-position: center no-repeat;
+        background-position: center no-repeat;
+    }
+    #cadr-7 {
+        background-image: url('/img/cadr-7.webp');
+        background-position-x: -10px;
+    }
+    #cadr-7 .content {
+        width: 73vw;
     }
 }
 
 @media(max-width:767px) {
     #main {
         background-image: url('/img/cadr-1-mob.webp');
-		background-position: center no-repeat;
+        background-position: center no-repeat;
     }
-	#main-slide-1 .content {
-		margin:2em 1em 0;
-		height:auto;
-		min-height:100%;
-	}
-	h1 {
-		font-size: 1.5em;
-	}
-	#main-slide-1 .text {
-		font-size: 1.25em;
-	}
-	#main-slide-1 .btn {
-		margin: 3em auto 1em;
-	}
-
+    #main-slide-1 .content {
+        margin: 2em 1em 0;
+        height: auto;
+        min-height: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    #main-slide-1 .text {
+        font-size: 1.25em;
+    }
+    #main-slide-1 .btn {
+        margin: 3em auto 1em;
+    }
+    #cadr-7 {
+        background-image: url('/img/cadr-7.webp');
+        background-position-x: -10px;
+    }
+    #cadr-7 .content {
+        width: 100%;
+        padding: 1em;
+    }
 }
