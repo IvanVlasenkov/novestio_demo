@@ -15,7 +15,7 @@
         <p class="lead">{{ __('messages.page_demo_w1') }}</p>
         <hr class="mb-4">
 
-        <form class="padding" method="post" action="{{ route('seed.demo') }}">
+        <form class="padding d-none" method="post" action="{{ route('seed.demo') }}">
             @csrf
             <div class="panel row">
 
