@@ -49728,6 +49728,9 @@ module.exports = function(module) {
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+var _require = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js"),
+    find = _require.find;
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
@@ -49750,6 +49753,24 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 
 var app = new Vue({
   el: '#app'
+});
+
+if ($('#sidebar')) {
+  var current_url = window.location.href;
+  var current_aside_li = document.querySelectorAll("li[data-for-route=\"".concat(current_url, "\"]"));
+
+  if (current_aside_li) {
+    active_li = document.createElement('div');
+    $(active_li).addClass('active');
+    $(active_li).appendTo(current_aside_li);
+  }
+}
+
+$(document).on("click", ".js--add-start-form-row", function (e) {
+  e.preventDefault();
+  var max_start_row = 15;
+  var current_start_form_row = document.querySelectorAll("#start-form-tbody>.js-start-form-row").count;
+  console.log(current_start_form_row);
 });
 
 /***/ }),

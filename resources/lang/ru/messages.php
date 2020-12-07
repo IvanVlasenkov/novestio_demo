@@ -49,7 +49,16 @@ return [
 
     'page_start_w1' => 'Ознакомительная версия сервиса',
     'page_start_w2' => 'Попробуйте Novestio',
+    'page_start_w3' => 'Задайте параметры рассчёта:',
+    'page_start_w4' => 'используйте не более 15 узлов',    
 
     'page_demo_w1' => 'Ознакомьтесь с Novestio',
+
+    'object_number' => 'Номер объекта',
+    'object_cost'   => 'Стоимость объекта',
+    'object_profit' => 'Прибыль от объекта',
+
+    'calculate'     => 'Рассчитать',
+    'budget'        => 'Бюджет',
 
 ];

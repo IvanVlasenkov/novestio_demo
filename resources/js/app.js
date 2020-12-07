@@ -4,6 +4,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+const { find } = require('lodash');
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -29,4 +31,21 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+});
+
+if ($('#sidebar')) {
+    var current_url = window.location.href;
+    var current_aside_li = document.querySelectorAll(`li[data-for-route="${current_url}"]`);
+    if (current_aside_li) {
+        active_li = document.createElement('div');
+        $(active_li).addClass('active');
+        $(active_li).appendTo(current_aside_li);
+    }
+}
+
+$(document).on("click", ".js--add-start-form-row", function(e) {
+    e.preventDefault();
+    let max_start_row = 15;
+    let current_start_form_row = document.querySelectorAll(`#start-form-tbody>.js-start-form-row`).count;
+    console.log(current_start_form_row);
 });
